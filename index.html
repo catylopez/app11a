@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quinta Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temaapp11.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script></head>
+ 
+<body onLoad="MM_preloadImages('imagenes/tierra.png','imagenes/gse_multipart26826.png','imagenes/40.png','imagenes/49.png')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1 align="center">&quot;ATLIXCO DE LAS FLORES&quot;</h1>
+  </div>
+   
+  <div align="center">
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/40.png',1)"><img src="imagenes/1.png" width="391" height="252" id="Image24"></a></p>
+  </div>
+  <div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2 align="center">Pueblo mágico</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2 align="center">Día de Muertos</h2>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2 align="center">Feria Huey Atlixcayotl</h2>
+      </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2 align="center">Villa Iluminada</h2>
+      </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2 align="center">Fiesta de Reyes</h2>
+      </a>
+      </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2 align="center">Gastronomía</h2>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2 align="center">Balnearios</h2>
+      </a>
+      </li>
+   </ul>
+    <div data-role="collapsible" data-content-theme="false">
+  <h1>Datos de quién lo elaboró</h1>
+     <div>
+      <p>Nombre: Caty López Rojas      
+      <p>Edad: 17 años      
+      <p>Municipio: Atlixco      
+      <p>Estado: Puebla      
+      <p>Ocupación: Estudiante             
+      <p>Escuela: C.B.T.i.s. no.16      
+      <p>Especialidad: Programación
+      <p>Módulo: Desarrolla Aplicaciones Móviles      
+      <p align="center"><img src="imagenes/3.png" width="119" height="150" alt="yul">           </div>
+    </div>
+</div>
+<div data-role="footer" align="center" data-theme="a"data-position="fixed">
+  <h4>Atlixco Zona Turística</h4>
+  <p><img src="res/android/mdpi.png" width="78" height="71" alt="t"></p>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Pueblo Mágico</h1>
+  </div>
+ <div data-role="content">
+  <div>
+    <div align="center"></div>
+    <p align="center"><img src="imagenes/7.png" width="411" height="262" alt="f"></p>
+    <p align="center">Se ubica a 25 km de la ciudad de Puebla, capital del Estado y cuenta con dos importantes vías de acceso: la Carretera Federal 190 y la moderna Autopista Vía Atlixcáyotl.</p>
+    <p align="center">            Actualmente, es una moderna ciudad con más de cien mil habitantes, que ha logrado armonizar su desarrollo urbano con el majestuoso legado de arquitectura colonial que dejaron sus fundadores (1579), y que hoy es uno de los principales atractivos turísticos de este municipio.<br>
+            <br>
+            <img src="imagenes/13.png" width="396" height="148" alt="hyu"><br>
+            <br>
+            Una vuelta por el zócalo es una experiencia inolvidable, saboreando los ricos helados y sorbetes que venden cerca de allí, así mismo entrar a algún restaurante para degustar la cecina atlixquense, el guacamole, el consomé Atlixquense, o las truchas en sus diferentes modalidades. A tan solo una cuadra del centro, en el mercado encontrarás tortillas hechas a mano, expendios de cecina, tlacoyos, quesos frescos de la región o si eres de "gustoso paladar" podrás comer los originales chapulines fritos con sal y limón.
+                  Atlixco de las Flores</strong>, como le llaman propios y extraños, conserva sus tradiciones y costumbres.<br>
+      <br>
+      <img src="imagenes/30.png" alt="htr" width="350" height="205" align="middle">    </p>
+    <p align="center"> Descubre cada rincón de Atlixco comenzando en el centro de la ciudad.Motivado por el mejor clima del mundo y la naturaleza que envuelve el lugar, detente en los miradores acondicionados para tu visita y dirige tu rumbo hacia la ermita de San Miguel Arcángel, guardián de toda nuestra ciudad.</p>
+  </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4 align="center">Atlixco Zona Turística</h4>
+  <p align="center"><img src="res/android/mdpi.png" width="78" height="71" alt="t"></p>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Día de Muertos</h1>
+ </div>
+ <div data-role="content">
+ <div>
+   <p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/49.png',1)"><img src="imagenes/44.png" width="403" height="286" id="Image25"></a>    
+   </div>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>Tapete Monumental de Día de Muertos</h1>
+    <div>
+       <p align="center"><img src="imagenes/42.png" width="388" height="217" alt="2"></p>
+       <p align="center">El Pueblo Mágico de Atlixco, con motivo del Día de Muertos, instaló su tapete monumental floral con 42 mil 922 plantas de Cempazúchil, en un espacio de 700 metros cuadrados, justo frente al Palacio Municipal fue colocado dicho tapete luciendo las flores con la variedad de colores, propias de la temporada, el cual fue colocado en días pasados. Toda la variedad de Cempasúchil en su flor amarilla y blanca, así como crisantemo blanco y morado, curry, amaranto y coleo, están en las figuras del palacio municipal.El Ayuntamiento colocó un pasillo elevado para que los visitantes y habitantes puedan recorrer el tapete monumental y con ello admiren dicha obra.</p>
+       <p align="center"><img src="imagenes/45.png" width="412" height="253" alt="3"></p>
+       <p align="center">En su momento el alcalde de Atlixco, José Luis Galeazzi resaltó que van a consolidar al municipio como un referente nacional e internacional en la producción de flores de diferentes tipos.
+         
+         Resaltó que van a promover las tradiciones culturales, artesanales y culinarias, con el objetivo de aumentar la atracción turística y la derrama económica.El tapete monumental es el tercero del año, pues iniciaron en la Semana Santa y siguieron con los 50 años del Huey Atlixcayotl.</p>
+    </div>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Desfile de Calaveras    </h1>
+  <div>
+    <p align="center">Esperan a más de 120 mil visitantes que además podrán disfrutar de la exposición de Catrinas.
+
+Atlixco. Autoridades municipales han organizado una serie de eventos artísticos y culturales conmemorativos al Día de Muertos, con lo que buscan generar una derrama económica superior a los 4 millones de pesos.       
+      <p align="center"><img src="imagenes/51.png" width="320" height="240" alt="7">              
+       <p align="center">Uno de los atractivos es el Tapete Monumental de Flores alusivo a estos días y que ya se exhibe afuera del palacio municipal; el cual está compuesto por más de 3 mil flores y que estará hasta el 17 de noviembre.        Además del Tradicional Desfile de Calaveras que se realizará el 2 de noviembre y en el cual cientos de personas disfrazadas acorde a la tradición buscan preservar la costumbre mexicana.       
+       <p align="center"><img src="imagenes/53.png" width="320" height="240" alt="8">              
+       <p align="center">Para este año como un atractivo más durante estas festividades, se encuentra la Muestra de Catrinas de más de 2 metros de altura por principales calles, mismas que se realizaron por jóvenes artistas Atlixquenses y que se expondrán del 25 de octubre al 2 de noviembre.
+     </div>
+  </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4 align="center">Atlixco Zona Turística</h4>
+  <p align="center"><img src="res/android/mdpi.png" width="78" height="71" alt="t"></p>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Feria Huey Atlixcayotl</h1>
+  </div>
+ <div data-role="content">
+ <div>
+<p align="center"><img src="imagenes/14.png" width="406" height="266" alt="9">
+<p align="center">Etimológicamente: <br>
+  • Huey = Grande <br>
+  • Atlix = Topónimo de Atlixco <br>
+  • Yotl = corazón, esencia e identidad <br>
+  <br>
+  Originalmente la fiesta se reducía al sábado y domingo últimos de septiembre. 
+  Hoy en la actualidad abarca toda una semana de actividades culturales que van desde exposiciones de flores, óleos, muestra artesanal, audición de bandas de viento y concursos florales o de animales.El festival se desarrolla presentando danzas como las pastoras, negritos, tecuanis, santiagos, migueles, toreadores, quetzales, charros, voladores, entre otras que incluyen algún ritual indígena para hacer un total de 11 a 15 danzas con 400 a 450 danzantes.
+<p align="center"><img src="imagenes/54.png" width="391" height="273" alt="11">
+<p align="center">
+  Al final de la presentación de las comitivas, alrededor de las 15 hrs., la Xochicihuatl y las Xochipilme, acompañadas por los pueblos participantes, invitan a las Autoridades y público en general a entrar al Netotiloayan (lugar de danza) para ejecutar sones populares mexicanos. 
+  <h1>Página oficial</h1>
+  <iframe src="http://puebla.travel/es/atlixco" style="width:90%;height:150%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+ </div>
+  </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4 align="center">Atlixco Zona Turística</h4>
+  <p align="center"><img src="res/android/mdpi.png" width="78" height="71" alt="t"></p>
+</div>
+</div>
+</DIV>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Villa Iluminada</h1>
+ </div>
+ <div data-role="content" >
+<iframe width="450" height="315" src="https://www.youtube.com/embed/8oGWpasTrLo" frameborder="0" allowfullscreen></iframe>
+ <p align="center">El hermoso pueblo de Atlixco, Puebla, se viste de gala con una impresionante instalación de luces de colores y decoración navideña. Del 25 de noviembre al 6 de enero, la Villa Iluminada de Atlixco hace brillar al pueblo con un esplendor especial.
+ </p>
+ <p align="center"><img src="imagenes/15.png" width="400" height="160" alt="hn"></p>
+ <p align="center"><strong>5 razones para ir a la Villa Iluminada de Atlixco:</strong></p>
+ <p align="center"><strong>1.- ¡ Es espectacular!</strong></p>
+ <p align="center">No se trata de la típica iluminación navideña que se ve por todas partes. Con luces LED de colores, impresionantes diseños que cubren calles completas y más de 3 mil figuras navideñas, se trata de un verdadero espectáculo que vale el viaje a Atlixco.</p>
+ <p align="center"><strong>2.- Hay eventos culturales</strong></p>
+ <p align="center">En estos días, el pueblo alberga una decena de eventos culturales como conciertos y presentaciones teatrales. Participan grupos de más de 30 países como Colombia, España, Libia, Kenia, Italia y otros, además de grupos locales y nacionales.</p>
+ <p align="center"><strong>3.- Se come riquísimo</strong></p>
+ <p align="center">Además de la iluminación, se instalará un corredor gastronómico con lo mejor de la gastronomía mexicana y poblana. Recorre las coloridas calles de Atlixco y termina en un puesto de deliciosos antojitos de la mejor calidad.</p>
+ <p align="center"><strong>4.- Puedes llevar a los niños</strong></p>
+ <p align="center">A los pequeños les encantará el espectáculo de las luces, pero además habrá una Feria de la Nochebuena y una Villa Infantil, una zona dedicada a los niños.</p>
+ <p align="center"><strong>5.- Los museos cierran más tarde</strong></p>
+ <p align="center">Durante la Villa Iluminada de Atlixco, los museos extienden sus horarios hasta las 8 de la noche, por lo que es una excelente oportunidad para hacer un recorrido por los museos de Atlixco.</p>
+ <p align="center"><strong><img src="imagenes/16.png" width="374" height="219" alt="M"><BR>
+   Lleva a toda la familia a la Villa Iluminada de Atlixco, una de las atracciones navideñas en Puebla más impresionantes y el pretexto ideal para conocer este lindo pueblo poblano.</strong></p>
+   </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4 align="center">Atlixco Zona Turística</h4>
+  <p align="center"><img src="res/android/mdpi.png" width="78" height="71" alt="t"></p>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Fiesta de Reyes</h1>
+ </div>
+ <div data-role="content" >
+ <div>
+   <p align="center">Las actividades inician  con el &ldquo;Festival de la Ilusión&rdquo;, que se realiza en el cerro de San Miguel, en Atlixco, donde más de tres mil globos llegarán con las cartas de los niños a los tres Reyes Magos, seguido de un show musical para niños, para después dejar volar los globos con la lista de regalos y finalizar con un destello de pirotecnia.   
+   <p align="center"><img src="imagenes/10.png" width="363" height="236" alt="h">      
+   <p align="center">Fiesta de Reyes seguirá para el 5 de enero con el Desfile de carros alegóricos y comparsas, en este los niños y todos los asistentes disfrutarán de 35 contingentes que recorrerán la principales calles de la ciudad, iniciando en el boulevard Rafael Moreno Valle, pasar por el zócalo y concluir en la 21 oriente.Para finalizar con esta fiesta, el 6 de enero todos los niños y niñas del municipio reciben un juguete, los puntos para la entrega del regalo será el zócalo de la ciudad, el recinto ferial y el parque de la revolución.</p>
+   <p align="center"><img src="imagenes/4.png" width="400" height="253" alt="g"><br>
+   </p>
+      <p align="center">Cabe mencionar que los tres mil globos son donados por el Ayuntamiento, por lo que serán obsequiados para los pequeños que asistan, basta que redacten su carta y asistan al Festival de la Ilusión. </p>
+ </div>
+ 
+ 
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4 align="center">Atlixco Zona Turística</h4>
+  <p align="center"><img src="res/android/mdpi.png" width="78" height="71" alt="t"></p>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Gastronomía</h1>
+ </div>
+<div data-role="content" >
+<div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/wowslider.html" style="width:800px;height:300px;max-width:90%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+</div>
+ <div data-role="collapsible" data-content-theme="false">  <h1>Comida Típica</h1>
+     <div>
+       <p>No te puedes ir de Atlixco  sin probar estos platillos en sus tradicionales mercados o restaurantes del  municipio.<br>
+       <LI>Cecina<br>
+<LI>Taco placero.<br>
+<LI>Enchiladas.<br>
+<LI>Barbacoa.
+<LI>Mole Poblano.
+<LI>Mole de Olla.
+<LI>Mole de Panza.
+<LI>Mole Verde o Pipián Verde.
+<LI>El Pipián Rojo.
+<LI>Adobo.
+<LI>Chiles en nogada 
+  <br>
+  <br>
+     </div>
+ </div>
+<div data-role="collapsible" data-content-theme="false">
+  <h1>Antojitos</h1>
+     <div>
+       <p> En ningún lugar pueden faltar estos deliciosos antojitos.</p>
+       <LI> Cemitas.<br>
+         <LI>Chalupas.<br>
+         <LI>Pambazos.<br>
+        <LI> Molotes.<br>
+        <LI> Tostadas.<br>
+        <LI> Tamales.<br>
+         <LI>Atole de Cacahuate.<br>
+        <LI> Esquites y Elotes.</p>
+     </div>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>Postres</h1>
+     <div><br>
+        <LI>Jeripa.<br>
+         <LI>Dulce de Calabaza. <br>
+         <LI>Dulce de Tejocote<br>
+         <LI>Dulce de Camote.
+         <LI>Nieves y Sorbete.     
+        
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4 align="center">Atlixco Zona Turística</h4>
+ <p align="center"><img src="res/android/mdpi.png" width="78" height="71" alt="t"></p>
+ </div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Balnearios</h1>
+ </div>
+ <div data-role="content" >
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>Balneario Axocopan</h1>
+     <div> 
+       <p align="center">Diviértete en áreas de juegos infantiles, albercas y un excelente ambiente.<img src="imagenes/56.png" width="400" height="300" alt="gfg">
+       <h3>LUGAR:</h3>
+        Niños Héroes s/n, Axocopan,Atlixco.  
+     </div>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>Club Campestre Agua Verde</h1>
+     <div> 
+       <p align="center">Diversión, tranquilidad y seguridad.Cuentan con cancha de tenis, volibol, frontón de mano, cancha de Squash, juegos infantiles, área de campamento, alberca con chapoteadero, palapa, etc.
+       <img src="imagenes/57.png" width="373" height="248" alt="sdf">
+     <h3>LUGAR:</h3>
+    3 norte, nº 817, Atlixco.</p>
+    </div>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>Villa Kristal Green</h1>
+     <div> 
+       <p align="center">Ven a descansar y disfrutar de amplias áreas de recreo. Goza del clima cálido de Atlixco en albercas y juegos infantiles.
+       <img src="imagenes/58.png" width="403" height="277" alt="dfga">
+       <h3>LUGAR:</h3>
+         Km 26 carr. Fed. Puebla, Atlixco,Atlixco.    </p>
+     </div>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>Balneario Las Palmas</h1>
+     <div> 
+       <p align="center">Diviértete en familia en las instalaciones del parque acuático, cabañas y zona de campamento.
+      <img src="imagenes/55.png" width="352" height="245" alt="88">
+       <h3>LUGAR:</h3>
+         Carretera Federal Puebla Atlixco Km. 24-300, s/c , Atlixco.</p>
+     </div>
+ </div>
+ 
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4 align="center">Atlixco Zona Turística</h4>
+  <p align="center"><img src="res/android/mdpi.png" width="78" height="71" alt="t"></p>
+  </div>
+  </div>
+</body>
+</html>
